@@ -1,7 +1,7 @@
 <?php
 
 function translate($match) {
-  $e = 'd';
+        $e = ctype_upper($match[0]) ? 'D' : 'd';
 	return str_replace($match[0], $match[0] . $e . $match[0], $match[0]);
 }
 
